@@ -16,11 +16,11 @@
 		}
 	</style>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="/socket.io/socket.io.js"
+	<script src="/socket.io/socket.io.js"
 	></script>
 	<script type="text/javascript">
 		jQuery(function($){
-			var socket = io.connect();
+			var socket = io.connect(window.location.hostname);
 			var $nickForm = $('#setNick');
 			var $nickError = $('#nickError');
 			var $nickBox = $('#nickname');
