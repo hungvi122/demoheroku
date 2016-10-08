@@ -13,7 +13,7 @@ var express = require('express'),
 	server.listen(3000);
 	app.use(express.static(__dirname));
 	app.get('',function(req,res){
-		res.sendfile(__dirname + '/index.html');
+		res.sendfile(__dirname + '/public/index.html');
 	});
 
 io.sockets.on('connection',function(socket){
