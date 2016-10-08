@@ -5,9 +5,9 @@ var express = require('express'),
 	nicknames = [];
 	app.set('port', (process.env.PORT || 5000));
 	app.use(express.static(__dirname + '/public'));
-	app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
+// 	app.listen(app.get('port'), function() {
+//   console.log('Node app is running on port', app.get('port'));
+// });
 
 	//app.set('port', (process.env.PORT || 5000));
 	server.listen(app.get('port'));
