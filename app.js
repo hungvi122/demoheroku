@@ -3,7 +3,9 @@ var express = require('express'),
 	server = require('http').createServer(app),
 	io = require('socket.io').listen(server);
 	nicknames = [];
+	//app.set('port', (process.env.PORT || 5000));
 	server.listen(3000);
+	app.use(express.static(__dirname));
 	app.get('',function(req,res){
 		res.sendfile(__dirname + '/index.html');
 	});
